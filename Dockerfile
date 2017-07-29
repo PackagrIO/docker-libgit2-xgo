@@ -29,4 +29,4 @@ COPY toolchains/osx/osxcross-macports /usr/local/osx-ndk-x86/tools
 
 RUN /scripts/build.sh
 
-ENTRYPOINT /bin/bash
+ENTRYPOINT []
