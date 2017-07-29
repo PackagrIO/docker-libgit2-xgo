@@ -23,6 +23,9 @@ export LIBSSH2_LIBRARY_DIRS="${LIBSSH2_OUTPUT_PREFIX}/lib64"
 mkdir -p ${LIBGIT2_BUILD_PATH}/build/linux
 mkdir -p ${LIBGIT2_OUTPUT_PREFIX}
 
+export PKG_CONFIG_PATH="/usr/local/linux/lib/pkgconfig/"
+
+
 cd ${LIBGIT2_BUILD_PATH}/build/linux
 cmake -DTHREADSAFE=ON \
       -DBUILD_CLAR=OFF \
