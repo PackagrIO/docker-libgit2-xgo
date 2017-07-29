@@ -5,7 +5,7 @@ if [ ! -f /usr/local/bin/windres ]; then
 fi
 
 cd /deps/openssl
-CC=x86_64-w64-mingw32-gcc HOST=x86_64-w64-mingw32 INCLUDE=/usr/x86_64-w64-mingw32/include LIB=/usr/x86_64-w64-mingw32/lib ./Configure --prefix=/usr/x86_64-w64-mingw32 mingw64
+CC=x86_64-w64-mingw32-gcc HOST=x86_64-w64-mingw32 INCLUDE=/usr/x86_64-w64-mingw32/include LIB=/usr/x86_64-w64-mingw32/lib ./Configure --prefix=/usr/x86_64-w64-mingw32 mingw64 threads no-shared
 make
 make install
 
