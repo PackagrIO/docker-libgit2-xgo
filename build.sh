@@ -13,5 +13,5 @@ echo "Building Linux libraries"
 $DIR/toolchains/build_linux.sh
 echo "Building OSX libraries"
 $DIR/toolchains/build_osx.sh
-#echo "Building Windows libraries"
-#$DIR/toolchains/build_windows.sh
+echo "Building Windows libraries"
+$DIR/toolchains/build_windows.sh
