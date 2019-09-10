@@ -35,13 +35,7 @@ ENTRYPOINT []
 # strip away all build tooling, this image should just contain the compiled libraries
 FROM ubuntu:16.04
 
-# libssl (and its dependency of zlib are required for libgit2 to compile)
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    libssl-dev \
-    && rm -rf /var/lib/apt/lists/* \
-    && rm -rf /usr/share/doc && rm -rf /usr/share/man \
-    && apt-get clean \
-    && mkdir -p /usr/local/
+RUN mkdir -p /usr/local/
 
 COPY --from=base /scripts/ /scripts/
 COPY --from=base /usr/local/linux/ /usr/local/linux/
