@@ -33,7 +33,7 @@ ENTRYPOINT []
 
 
 # strip away all build tooling, this image should just contain the compiled libraries
-FROM ubuntu:16.04
+FROM debian:stretch-slim
 
 # zlib is required for libgit2 to compile statically
 RUN apt-get update && apt-get install -y --no-install-recommends \
