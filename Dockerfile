@@ -3,7 +3,7 @@
 #
 # Released under the MIT license.
 
-FROM karalabe/xgo-1.10.x
+FROM karalabe/xgo-1.13.4
 
 MAINTAINER Jason Kulatunga <jason@thesparktree.com>
 
